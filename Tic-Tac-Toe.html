@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Tic-Tac-Toe.css">
+    <script src="./Tic-Tac-Toe.js" type="text/javascript" ></script>
+    <title>Tic-TAC-Toe Game></title>
+</head>
+<body>
+    <h1 class="heading">lets play Tic Toc Toe</h1>
+    <h3 class="winner-display"></h3>
+    <h4  class="turn-display">PlayerX is your turn</h4>
+    <div class="play-area">
+        <div class="play-cell" onclick="cellClickHandler(0,0,0)"></div>
+        <div class="play-cell" onclick="cellClickHandler(0,1,1)"></div>
+        <div class="play-cell" onclick="cellClickHandler(0,2,2)"></div>
+        <div class="play-cell" onclick="cellClickHandler(1,0,3)"></div>
+        <div class="play-cell" onclick="cellClickHandler(1,1,4)"></div>
+        <div class="play-cell" onclick="cellClickHandler(1,2,5)"></div>
+        <div class="play-cell" onclick="cellClickHandler(2,0,6)"></div>
+        <div class="play-cell" onclick="cellClickHandler(2,1,7)"></div>
+        <div class="play-cell" onclick="cellClickHandler(2,2,8)"></div>
+        
+    </div>
+    <div class="action-container">
+        <input class="Player-1" type="text" placeholder="Player-1" value="Player-1"/>
+        <button class="refresh-button scale-animate" type="button">refresh</button>
+        <input class="Player-2" type="text" placeholder="Player-2" value="Player-1" />
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,156 @@
+body{
+     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.heading{
+  font-size: 48px;    
+  color: brown;
+  margin-bottom: 16px;
+}
+.winner-display{
+ color: rgb(18, 145, 7);
+   margin: 8px 0px;
+
+}
+.turn-display{
+    color: rgb(68, 80, 80);
+   margin: 8px 0px;
+
+}
+.play-cell{
+    width: 150px;
+    height: 150px;
+    border: 1px solid;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     box-shadow: 0px 0px 25px 6px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 25px 6px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 25px 6px rgba(0,0,0,0.75); 
+animation: flip-card 1s ease-in-out ;
+}
+.play-cell:hover{
+    background: rgb(177, 238, 240);
+}
+.play-area{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    margin-top: 24px;
+    
+    
+}
+.x-cell{
+     
+    font-size: 100px;
+     font-weight: 500px;
+    background-image: linear-gradient(to top, #94d2e8, #a4dddf, #bfe6d8, #dbedd9, #f3f4e3);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+.x-cell:hover{ 
+    cursor: not-allowed;
+    background-image: linear-gradient(to top, #94d2e8, #a4dddf, #bfe6d8, #dbedd9, #f3f4e3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.o-cell{
+    font-size: 100px;
+    font-weight: 500px;
+     background-image: linear-gradient(to top, #f49aa1, #f6b3a0, #f2cbad, #f0e1c5, #f3f4e3);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+}
+.o-cell:hover{
+         cursor: not-allowed;
+
+        background-image: linear-gradient(to top, #f49aa1, #f6b3a0, #f2cbad, #f0e1c5, #f3f4e3);
+
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+
+}
+.Player-1{
+    background-color: thistle;
+    margin: 4px;
+
+}
+.refresh-button{
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 600;
+     text-transform: uppercase;
+     border: none;
+     border-radius: 5px;
+     font-family: inherit;
+     background-image: linear-gradient(to bottom, #666ff5, #6a73f3, #6f77f0, #737bee, #777feb);
+     color: white;
+     letter-spacing: 4px;
+     margin: 0px 16px;
+     transition: 0.3s;
+
+    }
+.Player-2{
+    background-color: thistle;
+    margin: 4px;
+
+}
+.action-container{
+    margin-top: 16px;
+    padding: 16px;
+}
+.refresh-button:hover {
+ color: red
+ /*transform: translate(10px,10px);*/
+ 
+}
+input{
+    padding: 16px;
+    font-size: 16px;
+}
+.scale-animate{
+    animation: scale-animate 1s ease-in-out 5s infinite alternate-reverse;
+}
+@keyframes scale-animate {
+    from{
+        transform: scale(1.0);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+@keyframes scale-animate {
+    0%{
+        transform: scale(1.0);
+    }
+    10%{
+        transform: scale(1.1);
+    }
+    80%{
+        transform: scale(1.2);
+    }
+     100%{
+     transform: scale(1.3);
+ }
+}
+@keyframes flip-card {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(180deg);
+       
+    }
+    
+}
+.flip-animatate{
+    animation: flip-card 0.3s ease-in-out ;
+}
